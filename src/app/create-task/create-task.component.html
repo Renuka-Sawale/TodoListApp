@@ -1,0 +1,23 @@
+<div class="container-top">
+  <h4 style="text-align:center;">My Day ...</h4>
+    <div>
+      <form class="example-form" style=text-align:center;>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <input (change)= "task($event)" matInput placeholder="Add a task">
+          </mat-form-field>
+          <div>
+            <button class="task-create-button" type="submit">Add</button>
+        </div>
+      </form> 
+      <!-- <app-display-task [parentData]="name"></app-display-task> -->
+      <app-display-task></app-display-task> 
+      <hr style="width:100%; text-align:left; margin-top:10px;">
+      <app-completed-task></app-completed-task> 
+    </div>
+</div>
+
+
+    
+
+
+

@@ -1,0 +1,13 @@
+<div class="displayBox" >
+  <ng-container *ngFor="let task of service.task; index as i">
+      <div class="taskBlock">
+          <div class="title">
+            <!-- <h4>{{"Hi" + parentData}}</h4> -->
+            <mat-radio-group>
+              <mat-radio-button [checked]="false" value="{{task}}"><h4 (click)="removeTask(i)">{{task}}</h4></mat-radio-button>
+            </mat-radio-group>  
+          </div> 
+      </div>
+  </ng-container>
+</div>
+

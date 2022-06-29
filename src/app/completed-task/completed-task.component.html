@@ -1,0 +1,15 @@
+<div class="displayBox" >
+  <p><b>Completed</b></p>
+  <ng-container *ngFor="let rmvTask of service.rmvTask";>
+      <div class="taskBlock">
+          <div (click)="getRemovedTask()">
+            <div class="title">
+              <p>{{rmvTask}}</p>
+            </div> 
+          </div>
+      </div>
+  </ng-container>
+</div>
+
+
+
